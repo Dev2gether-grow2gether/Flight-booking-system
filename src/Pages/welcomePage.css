@@ -7,7 +7,7 @@
 .odd {
  display: flex;
  flex-direction: column;
- gap: 20px;
+ /* gap: 0px; */
  background-color: hwb(0 96% 4%);
  height: 100vh;
  width: 100vw;
@@ -17,38 +17,46 @@
 }
 
 .odd .bg {
- height: calc(100% - 63px);
+ height: calc(35%);
  width: 100%;
  color: #F5F5F5;
- position: fixed;
- /* border: 1px white solid; */
- z-index: 1;
+ -khtml-user-select: none;
+ -o-user-select: none;
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ user-select: none
 }
 
 .odd .slide-img {
  display: flex;
  justify-content: center;
  align-content: center;
- height: calc(90vh - 63px);
+ height: 55%;
  width: 100%;
  color: #F5F5F5;
- position: relative;
- /* border: 1px white solid; */
- z-index: 1;
 }
 
 .odd .slide-img img {
- display: flex;
- height: 100%;
+ height: 90%;
  width: 60%;
- transform: translate(0%, 15%);
  color: #F5F5F5;
- /* border: 1px white solid; */
+ -khtml-user-select: none;
+ -o-user-select: none;
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ pointer-events: stroke;
+ user-select: none
+}
+
+.foot-container {
+ height: 10%;
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
 }
 
 .slide-action-bnt {
  width: 180px;
- height: 43px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -60,6 +68,7 @@
  line-height: 44px;
  letter-spacing: 0em;
  background-color: #0D6FCA;
+ cursor: pointer;
 }
 
 .pignation {
