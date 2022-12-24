@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import welcomeImg from '../assets/welcomeImg.svg'
 import logo from '../assets/logo.svg'
 import slide1logo from '../assets/slide1logo.svg'
+import insta from '../assets/insta.svg'
+import fb from '../assets/fb.svg'
+import google from '../assets/google.svg'
 import WelcomeSlide from '../components/WelcomeSlide'
 import "./welcomePage.css"
 
@@ -39,12 +42,11 @@ export default function WelcomePage ()
 
   slider.addEventListener( 'touchstart', function ( event )
   {
-   startPoint = event.clientX;
-  }
-  )
+   startPoint = event.touches[ 0 ].clientX;
+  } )
   slider.addEventListener( 'touchend', function ( event )
   {
-   endPoint = event.clientX;
+   endPoint = event.changedTouches[ 0 ].clientX;
    if ( startPoint > endPoint )
    {
     slide[ currentSlide ].style.marginLeft = "-100vw";
@@ -57,7 +59,7 @@ export default function WelcomePage ()
 
  const Logo = ( { slideLogo, cls } ) =>
  {
-  return <img draggable={ false } onDragstart={ ( event ) => event.preventDefault() } className={ cls } src={ slideLogo } />
+  return <img draggable={ false } onDragStart={ ( event ) => event.preventDefault() } className={ cls } src={ slideLogo } />
 
  }
  const Pagiganation = ( { num } ) =>
@@ -83,7 +85,7 @@ export default function WelcomePage ()
    <WelcomeSlide cls='slide2 slides'>
     <Logo slideLogo={ logo } cls='logo' />
     <div className='slide-img'>
-     <img draggable={ false } onDragstart={ ( event ) => event.preventDefault() } src={ welcomeImg } />
+     <img draggable={ false } onDragStart={ ( event ) => event.preventDefault() } src={ welcomeImg } />
     </div>
     <div className='foot-container'>
      <div className='slide-action-bnt'>
@@ -94,25 +96,35 @@ export default function WelcomePage ()
    </WelcomeSlide>
 
    <WelcomeSlide cls='slide3 slides'>
-    <div>
+
+    <div id='info-text'>
      Sign In And Get Started With Book It...
     </div>
+
     <form action="">
-     
-     <button className='slide-action-bnt'>
-      Get
+
+     <button className='find-fight-form-btn'>
+      Find a flight
      </button>
-    
-     <button className='slide-action-bnt'>
-      Get
+
+     <button className='signin-form-btn'>
+      SIgn in
      </button>
      <hr />
-     <div>
-      <div><img src="" alt="" /></div>
-      <div><img src="" alt="" /></div>
-      <div><img src="" alt="" /></div>
+
+     <div id="social-login-option">
+      <div id="social-login-icon">
+       <img src={ insta } alt="" className='social-icon' />
+       <img src={ fb } alt="" className='social-icon' />
+       <img src={ google } alt="" className='social-icon' />
+      </div>
+      <button className='create-acct-form-btn'>
+       SIgn in
+      </button>
      </div>
+
     </form>
+
     <div className='foot-container'>
      <div className='slide-action-bnt'>
       Get
