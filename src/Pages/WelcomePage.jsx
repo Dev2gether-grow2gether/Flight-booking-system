@@ -20,6 +20,7 @@ export default function WelcomePage ()
  useEffect( () =>
  {
   var slider = document.querySelector( '.welcome-page-container' );
+  var getStartedBtn = document.querySelector( '#getStartedBtn' );
   var slide = document.querySelectorAll( '.slides' );
   var currentSlide = 0;
   var startPoint = 0;
@@ -34,7 +35,7 @@ export default function WelcomePage ()
    endPoint = event.clientX;
    if ( startPoint > endPoint )
    {
-    
+
     slide[ currentSlide ].style.marginLeft = "-100vw";
     currentSlide = ( currentSlide + 1 ) % slide.length;
     slide[ currentSlide ].style.marginLeft = "0px";
@@ -56,6 +57,14 @@ export default function WelcomePage ()
    }
 
   } )
+  getStartedBtn.addEventListener( "click", () =>
+  {
+
+   slide[ currentSlide ].style.marginLeft = "-100vw";
+   currentSlide = ( currentSlide + 1 ) % slide.length;
+   slide[ currentSlide ].style.marginLeft = "0px";
+  }
+  )
  } )
 
  const Logo = ( { slideLogo, cls } ) =>
@@ -89,7 +98,7 @@ export default function WelcomePage ()
      <img draggable={ false } onDragStart={ ( event ) => event.preventDefault() } src={ welcomeImg } />
     </div>
     <div className='foot-container'>
-     <div className='slide-action-bnt'>
+     <div className='slide-action-bnt' id="getStartedBtn">
       GET STARTED
      </div>
      <Pagiganation num={ 1 } />
