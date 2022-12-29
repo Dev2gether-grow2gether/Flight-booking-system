@@ -34,6 +34,7 @@ export default function WelcomePage ()
    endPoint = event.clientX;
    if ( startPoint > endPoint )
    {
+    
     slide[ currentSlide ].style.marginLeft = "-100vw";
     currentSlide = ( currentSlide + 1 ) % slide.length;
     slide[ currentSlide ].style.marginLeft = "0px";
