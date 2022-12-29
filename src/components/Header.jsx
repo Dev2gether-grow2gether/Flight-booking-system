@@ -11,9 +11,9 @@ export default function Header ()
      <input type="search" />
     </div>
     <div id="tabs">
-     <div></div>
-     <div></div>
-     <div></div>
+     <div> Hotel </div>
+     <div> Flights </div>
+     <div> Tours </div>
      <input type="img" />
 
     </div>
