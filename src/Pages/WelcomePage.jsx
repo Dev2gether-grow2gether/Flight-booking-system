@@ -67,6 +67,17 @@ export default function WelcomePage ()
   )
  } )
 
+ const slideIt = ( page ) =>
+ {
+  var slider = document.querySelector( '.welcome-page-container' );
+  var slide = document.querySelectorAll( '.slides' );
+
+  slide[ page ].style.marginLeft = "-100vw";
+  currentSlide = ( currentSlide + 1 ) % slide.length;
+  slide[ currentSlide ].style.marginLeft = "0px";
+ }
+
+
  const Logo = ( { slideLogo, cls } ) =>
  {
   return <img draggable={ false } onDragStart={ ( event ) => event.preventDefault() } className={ cls } src={ slideLogo } />
@@ -76,7 +87,9 @@ export default function WelcomePage ()
  {
   return (
    <div className='pignation'>
-    <span className={ num == 0 ? "active" : "inactive" }></span>
+    <span className={ num == 0 ? "active" : "inactive" }
+
+    ></span>
     <span className={ num == 1 ? "active" : "inactive" }></span>
     <span className={ num == 2 ? "active" : "inactive" }></span>
    </div>

@@ -222,14 +222,14 @@
 }
 
 .slide3 #info-text {
- width: 90%;
+ width: 80%;
  height: 25%;
  border-radius: 50%;
  /* border: 1px red solid; */
  display: flex;
- justify-content: center;
+ justify-content:left;
  align-items: center;
- font-size: 40px;
+ font-size: 30px;
  color: #0D6FCADE;
  background: rgba(233, 230, 230, 0.37);
  font-weight: 400;
@@ -237,7 +237,7 @@
 
 .slide3 form {
  width: 90%;
- height: 30%;
+ height: 40%;
  /* border-radius: 50%; */
  /* border: 1px red solid; */
  display: flex;

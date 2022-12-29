@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import './App.css'
+import Home from './Pages/Homepage/home'
 import WelcomePage from './Pages/WelcomePage'
 
 function App ()
@@ -14,6 +15,9 @@ function App ()
         <Routes>
           <Route exact path="/" element={
             <WelcomePage />
+          } />
+          <Route exact path="/bookit/flights/home" element={
+            <Home />
           } />
         </Routes>
       </Router>
