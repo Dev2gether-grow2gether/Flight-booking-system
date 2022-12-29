@@ -128,16 +128,13 @@ export default function WelcomePage ()
        <img src={ fb } alt="" className='social-icon' />
        <img src={ google } alt="" className='social-icon' />
       </div>
-      <button className='create-acct-form-btn'>
-       SIgn in
-      </button>
      </div>
 
     </form>
 
     <div className='foot-container'>
-     <div className='slide-action-bnt'>
-      Get
+     <div className='create-accout-btn'>
+      Create your account
      </div>
      <Pagiganation num={ 2 } />
     </div>

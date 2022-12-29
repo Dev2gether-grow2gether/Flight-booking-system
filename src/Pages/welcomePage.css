@@ -169,7 +169,7 @@
  display: flex;
  flex-direction: column;
  gap: 20px;
- border: 1px red solid;
+ /* border: 1px red solid; */
 }
 
 .slide3 .slide-img img {
@@ -253,7 +253,7 @@
 form .find-fight-form-btn,
 form .signin-form-btn {
  border: 0;
- width: 180px;
+ width: 200px;
  display: flex;
  cursor: pointer;
  font-size: 20px;
@@ -290,13 +290,15 @@ hr{
 }
 
 #social-login-icon {
- width: 90%;
- height: 30%;
+ width: 180px;
  display: flex;
  justify-content: space-evenly;
  align-items: center;
  font-size: 40px;
  color: #0D6FCADE;
+ border-top: 1px rgb(213, 209, 209) solid;
+ border-width: 2px;
+ padding: 10px 0;
  /* background: rgba(233, 230, 230, 0.37); */
  font-weight: 400;
 }
@@ -323,6 +325,23 @@ hr{
  letter-spacing: 0em;
  background-color: #0a5193;
  cursor: pointer;
+}
+
+.create-accout-btn {
+ width: 180px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #0a5193;
+ border-radius: 20px;
+ font-family: Open Sans Hebrew;
+ font-size: 20px;
+ font-weight: 800;
+ line-height: 44px;
+ letter-spacing: 0em;
+ border:1px solid #0a5193;
+ cursor: pointer;
+ padding: 0  5px;
 }
 
 .pignation {
