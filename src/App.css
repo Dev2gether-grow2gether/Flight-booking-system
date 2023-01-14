@@ -1,8 +1,18 @@
  * {
-   max-width: 1280px;
-   margin: 0 auto;
+   /* max-width: 1280px; */
+   margin: 0;
    padding: 0;
-   text-align: center;
+   box-sizing: border-box;
+ }
+
+ *::-webkit-scrollbar {
+   width: 0;
+ }
+
+ #app {
+   background-color: var(--appbg);
+   height: 100vh;
+   padding: 0 10px;
  }
 
  /*

@@ -1,0 +1,68 @@
+{
+ "hostedrooms": [
+  {
+   "title": "Man God's first love",
+   "connected": 400
+  },
+  {
+   "title": "Jesus the way",
+   "connected": 1505
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
+  },
+  {
+   "title": "Prayer with all Prayer",
+   "connected": 505
+  },
+  {
+   "title": "Prayer for the Campus",
+   "connected": 205
+  }
+ ],
+ "follows": [
+  {
+   "title": "God's first love",
+   "connected": 400
+  },
+  {
+   "title": "Jesus is the only way",
+   "connected": 1505
+  },
+  {
+   "title": "Teaching the Love of God to all",
+   "connected": 4055
+  },
+  {
+   "title": "Prayer with all Prayer and suplications",
+   "connected": 505
+  }
+ ],
+ "allrooms": [
+  {
+   "title": "Man and God",
+   "connected": 400
+  },
+  {
+   "title": "the man Jesus",
+   "connected": 1505
+  },
+  {
+   "title": "Teaching God to all",
+   "connected": 4055
+  },
+  {
+   "title": "Prayer and the Gospel",
+   "connected": 505
+  },
+  {
+   "title": "Prayer for the Saints",
+   "connected": 205
+  },
+  {
+   "title": "Prayer for the Campus and the poeple at large",
+   "connected": 205
+  }
+ ]
+}

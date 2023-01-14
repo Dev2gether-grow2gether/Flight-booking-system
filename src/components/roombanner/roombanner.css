@@ -1,0 +1,174 @@
+#home-page #rooms-list {
+ /* border: 4px red solid; */
+ overflow-y: scroll;
+ display: flex;
+ flex-direction: column;
+ padding: 10px 5px;
+ gap: 10px;
+ align-items: center;
+ scroll-behavior: smooth;
+}
+
+#home-page #rooms-list {
+ /* border: 4px red solid; */
+ overflow-y: scroll;
+ display: flex;
+ flex-direction: column;
+ padding:0 0px 100px;
+ gap: 10px;
+ align-items: center;
+ scroll-behavior: smooth;
+}
+
+.rooms-banner-cont {
+ /* box-shadow: 0px 0px 4px #151515d8; */
+ height: 70px;
+ max-height: 80px;
+ width: 100%;
+ padding:0 20px;
+ /* background-color: var(--mosque); */
+ border-radius: 10px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.rooms-banner-cont .rooms-banner {
+ box-sizing: border-box;
+ display: flex;
+ width: 100%;
+ /* flex-direction: column; */
+ align-items: center;
+ justify-content: space-around;
+ font-size: 12px;
+ height: 70px;
+ gap: 5px;
+ padding: 0 0 10px;
+ border-bottom: 1px solid var(--mosque);
+ /* border-radius: 10px; */
+}
+
+.rooms-banner-cont .rooms-banner .room-details {
+ width: 70%;
+ display: flex;
+ padding: 2px;
+ flex-direction: column;
+ justify-content: space-evenly;
+ font-size: 12px;
+ height: 100%;
+}
+
+.rooms-banner-cont .rooms-banner .room-details .room-name {
+ color: white;
+ font-size: 12px;
+ width: 100%;
+ /* text-shadow: 1px 1px 3px rgb(56, 55, 55); */
+ font-weight: 700;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rooms-banner-cont .rooms-banner .room-details .room-data {
+ font-size: 11px;
+ opacity: 0.6;
+ color: white;
+ display: flex;
+ justify-content: space-around;
+}
+
+.rooms-banner-cont .room-catergory-image {
+ width: 50px;
+ height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.rooms-banner-cont .room-catergory-image input {
+ width: 50px;
+ height: 50px;
+ border-radius: 100%;
+}
+
+.rooms-banner-cont .join-room {
+ width: 15px;
+ height: 15px;
+ /* display: none; */
+ border: 0;
+ border-radius: 100%;
+ /* background-image: repeating-radial-gradient( rgb(10, 190, 10),  rgb(9, 118, 9)); */
+ border: var(--blue) 1px solid;
+ animation: 1s infinite alternate glow;
+}
+
+@keyframes glow {
+  100%, 0% {
+ background-image: repeating-radial-gradient(10% 90%, rgb(10, 79, 90), rgb(10, 210, 187), rgb(79, 186, 184));
+    transform: perspective(10px) scale3d(1, 1, 1) translateZ(1px);
+  }
+
+  25% {
+ background-image: repeating-radial-gradient( 20% 80%, rgb(85, 172, 149), rgb(10, 193, 210), rgb(16, 223, 220));
+    transform: perspective(20px) scale3d(.9, .9, .9) translateZ(2px);
+
+  }
+  50% {
+ background-image: repeating-radial-gradient( 20% 80%, rgb(85, 172, 149), rgb(10, 193, 210), rgb(16, 223, 220));
+ background-image: repeating-radial-gradient( 20% 90%, rgb(10, 89, 90), rgb(10, 197, 210), rgb(16, 220, 223));
+    transform: perspective(30px) scale3d(.9, .9, .9) translateZ(3px);
+  }
+
+  75% {
+    transform: perspective(40px) scale3d(1, 1, 1) translateZ(4px);
+ background-image: repeating-radial-gradient(10% 90%, rgb(10, 79, 90), rgb(10, 210, 187), rgb(79, 186, 184));
+
+  }
+}
+/* 
+@keyframes glow {
+  100%, 0% {
+ background-image: repeating-radial-gradient(10% 90%, rgb(90, 30, 10), rgb(210, 11, 10), rgb(186, 79, 79));
+    transform: perspective(10px) scale3d(1, 1, 1) translateZ(1px);
+  }
+
+  25% {
+ background-image: repeating-radial-gradient( 20% 80%, rgb(255, 1, 1), rgb(210, 11, 10), rgb(223, 16, 16));
+    transform: perspective(20px) scale3d(.9, .9, .9) translateZ(2px);
+
+  }
+  50% {
+ background-image: repeating-radial-gradient( 40% 60%, rgb(90, 30, 10), rgb(210, 11, 10), rgb(223, 16, 16));
+    transform: perspective(30px) scale3d(.9, .9, .9) translateZ(3px);
+  }
+
+  75% {
+    transform: perspective(40px) scale3d(1, 1, 1) translateZ(4px);
+ background-image: repeating-radial-gradient(50% 50%, rgb(90, 30, 10), rgb(137, 29, 29), rgb(223, 16, 16));
+
+  }
+} */
+
+/* 
+
+@keyframes glow {
+  100%, 0% {
+ background-image: repeating-radial-gradient(10% 90%, rgb(90, 30, 10), rgb(210, 11, 10), rgb(186, 79, 79));
+    transform: perspective(10px) scale3d(1, 1, 1) translateZ(1px);
+  }
+
+  25% {
+ background-image: repeating-radial-gradient( 20% 80%, rgba(164, 10, 10, 0.879), rgb(210, 11, 10), rgba(249, 0, 0, 0.394));
+    transform: perspective(20px) scale3d(.9, .9, .9) translateZ(2px);
+
+  }
+  50% {
+ background-image: repeating-radial-gradient(10% 90%, rgb(90, 30, 10), rgb(210, 11, 10), rgb(186, 79, 79));
+    transform: perspective(30px) scale3d(.9, .9, .9) translateZ(3px);
+  }
+
+  75% {
+    transform: perspective(40px) scale3d(1, 1, 1) translateZ(4px);
+ background-image: repeating-radial-gradient( 20% 80%, rgba(164, 10, 10, 0.879), rgb(210, 11, 10), rgba(249, 0, 0, 0.394));
+
+  }
+} */

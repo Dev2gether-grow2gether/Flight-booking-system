@@ -12,6 +12,32 @@ dist
 dist-ssr
 *.local
 
+# TEMP ignore
+main.jsx
+welcome
+# channelpage
+# Homepage
+myfunctions
+searchbar
+header
+channelbanner
+settings
+public
+assets
+channels
+channelspace
+.vscode
+themes
+index.css
+foot
+index.html
+package.json
+vite.config.js
+WelcomeSlide.jsx
+Homepage copy
+WhatsApp-Group-Call-New-Features.webp
+coolicons.v2.5
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
