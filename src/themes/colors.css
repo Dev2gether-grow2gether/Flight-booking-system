@@ -1,0 +1,12 @@
+:root {
+ --mosque: #075e54;
+ --grad: repeating-linear-gradient(#011e1b, #011715, #02342ef1, #03423bdc, #03423be6, #011715, #011e1b);
+ --mosque-darker: #03423b;
+ --teal-green-dark: #075E54;
+ --teal-green: #128C7E;
+ --blue: #34B7F1;
+ --light-green: #25D366;
+
+ /* new important theme color */
+ --lighter-green: #10dfdc;
+}

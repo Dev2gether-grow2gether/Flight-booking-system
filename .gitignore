@@ -14,9 +14,9 @@ dist-ssr
 
 # TEMP ignore
 main.jsx
-welcome
-# channelpage
-# Homepage
+# welcome
+channelpage
+Homepage
 myfunctions
 searchbar
 header
@@ -24,10 +24,11 @@ channelbanner
 settings
 public
 assets
-channels
+channel
 channelspace
+status
 .vscode
-themes
+# themes
 index.css
 foot
 index.html

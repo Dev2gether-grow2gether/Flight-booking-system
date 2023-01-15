@@ -33,16 +33,15 @@ export default function Home ()
                     {
                         setCurrentTab( "hostedrooms" )
                     } }>
-                        <img src={ micIcon } alt="channel" />
+                        {/* <img src={ micIcon } alt="channel" /> */ }
+                        ONGOING
                     </div>
                     <div className={ currentTab === "allrooms" ? "tab active" : 'tab' } onClick={ () =>
                     {
                         setCurrentTab( "allrooms" )
                     } }>
-                        <img src={ roomlLstIcon } alt="channel" />
-                    </div>
-                    <div className='tab disable' onClick={ () => { setCurrentTab( "host" ) } }>
-                        <img src={ roomlLstIcon } alt="channel" />
+                        {/* <img src={ roomlLstIcon } alt="channel" /> */ }
+                        UPCOMING
                     </div>
                 </div>
             </Header>
@@ -51,7 +50,6 @@ export default function Home ()
                 { currentTab === "host" ? <ChannelSpace rooms={ data } /> :
                     <Rooms rooms={ data } /> }
             </section>
-            <Footer />
         </div>
     )
 }

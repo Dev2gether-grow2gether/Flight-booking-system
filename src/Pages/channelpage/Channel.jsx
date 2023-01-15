@@ -17,36 +17,21 @@ export default function Channel ()
 
     useEffect( () =>
     {
-        fetch( "/mockdata/channels.json" )
+        fetch( "/mockdata/channels.js0on" )
             .then( res => res.json() )
             .then( data =>
             {
                 setData( data[ currentTab ] )
-                // console.log( data[ currentTab ] )
+                console.log( data[ currentTab ] )
             } )
     }, [ currentTab ] )
 
     return (
         <div id='channel-page'>
             <Header id="channel-nav">
-                <div id="tabs">
-                    <div className={ currentTab === "channels" ? "tab active" : 'tab' } onClick={ () => { setCurrentTab( "channels" ) } }>
-                        <img
-                            src={ channelIcon } alt="channel" /></div>
-                    <div className={ currentTab === "follows" ? "tab active" : 'tab' } onClick={ () =>
-                    {
-                        setCurrentTab( "follows" )
-                    } }> <img src={ followIcon } alt="channel" /> </div>
-                    <div className={ currentTab === "global" ? "tab active" : 'tab' } onClick={ () =>
-                    {
-                        setCurrentTab( "global" )
-                    } }>  <img src={ globalIcon } alt="channel" /> </div>
-                </div>
             </Header>
             <section id='channels-list'>
-
-                { currentTab === "channels" ? <ChannelSpace data={ data } /> :
-                    <Channels data={ data } /> }
+                <ChannelSpace data={ data } />
             </section>
             <Footer />
         </div>
