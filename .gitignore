@@ -13,31 +13,31 @@ dist-ssr
 *.local
 
 # TEMP ignore
-main.jsx
-# welcome
-channelpage
-Homepage
-myfunctions
-searchbar
-header
-channelbanner
-settings
-public
-assets
-channel
-channelspace
-status
+ main.jsx
+ welcome
+ channelpage
+ Homepage
+ myfunctions
+ searchbar
+ header
+ channelbanner
+ settings
+ public
+ assets
+ channel
+ channelspace
+ status
 .vscode
-# themes
-index.css
-foot
-index.html
-package.json
+ themes
+ index.css
+ foot
+ index.html
+ package.json
 vite.config.js
 WelcomeSlide.jsx
 Homepage copy
-WhatsApp-Group-Call-New-Features.webp
-coolicons.v2.5
+# WhatsApp-Group-Call-New-Features.webp
+# coolicons.v2.5
 
 # Editor directories and files
 .vscode/*

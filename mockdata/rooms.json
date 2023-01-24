@@ -1,5 +1,5 @@
 {
- "hostedrooms": [
+ "ongoing": [
   {
    "title": "Man God's first love",
    "connected": 400
@@ -7,6 +7,26 @@
   {
    "title": "Jesus the way",
    "connected": 1505
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
+  },
+  {
+   "title": "Teaching the Love of God",
+   "connected": 4055
   },
   {
    "title": "Teaching the Love of God",
@@ -39,7 +59,7 @@
    "connected": 505
   }
  ],
- "allrooms": [
+ "upcoming": [
   {
    "title": "Man and God",
    "connected": 400

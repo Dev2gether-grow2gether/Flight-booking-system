@@ -1,46 +1,38 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import './themes/darkmode.css'
 import './App.css'
-import './themes/colors.css'
-import Home from './Pages/Homepage/home'
-import WelcomePage from './Pages/welcome/WelcomePage'
-import Channels from './Pages/channelpage/channel'
-import Status from './Pages/status/Status'
-import Settings from './Pages/settings/Settings'
-import Footer from './components/foot/Footer'
-import ChannelSpace from './Pages/channelspace/ChannelSpace'
+import Home from './pages/home/Home'
+import Settings from './pages/settings/Settings'
+import Footer from './components/footerComponent/Footer'
+import ManageChannel from './pages/manageChannel/ManageChannel'
+import CreateChannel from './pages/createChannel/CreateChannel'
+import Channels from './pages/channels/Channels'
+import Account from './pages/Account/Account'
+import RoomSpace from "./pages/roomspace/RoomSpace";
 
-function App ()
-{
+function App() {
 
-  const [ count, setCount ] = useState( 0 )
+    // const [count, setCount] = useState(0)
 
-  return (
-    <div id="app">
+    return (
+        <section id="app">
 
-      <Router>
-        <Routes>
-          <Route exact path="/" element={
-            <WelcomePage />
-          } />
-          <Route exact path="/home" element={
-            <Home />
-          } />
-          <Route exact path="/status" element={
-            <Home />
-          } />
-          <Route exact path="/channelspace" element={
-            <ChannelSpace />
-          } />
-          <Route exact path="/settings" element={
-            <Settings />
-          } />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
-  )
+            <Router>
+                <div>
+                    <Routes>
+                        {/* <Route exact path="/" element={ <WelcomePage /> } /> */}
+                        <Route exact path="/home" element={<Home children={<Footer/>}/>}/>
+                        <Route exact path="/settings" element={<Settings children={<Footer/>}/>}/>
+                        <Route exact path="/manage_channel/my_channel_space" element={<ManageChannel/>}/>
+                        <Route exact path="/account_settings" element={<Account/>}/>
+                        <Route exact path="/create_new_channel" element={<CreateChannel/>}/>
+                        <Route exact path="/channels" element={<Channels/>}/>
+                        <Route exact path="/room_space" element={<RoomSpace/>}/>
+                    </Routes>
+                </div>
+            </Router>
+        </section>
+    )
 }
 
 export default App

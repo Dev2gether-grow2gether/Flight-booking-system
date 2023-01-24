@@ -1,12 +1,13 @@
-
 @import url("colors.css");
-:root{
- /* --appbg : #011e1b; */
- --appbg : var(--mosque-darker);
- --btn-border : var(--teal-dreen-dark)
- }
 
- /* --Mosque :#075e54;
+:root {
+ --appbg: var(--mosque-darker);
+ --navtabtextcolor: rgb(16, 223, 220);
+ --navtabtextcolor: rgb(16, 223, 220);
+ --border: var(--mosque);
+}
+
+/* --Mosque :#075e54;
  --teal-dreen-dark :#075E54;
  --teal-green : #128C7E;
  --blue : #34B7F1;

@@ -1,0 +1,194 @@
+#settings-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+    height: 100vh;
+    /* border: 1px red solid; */
+}
+
+#settings-page > #settings-container {
+    width: 100%;
+    min-height: 100%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px rgb(255, 238, 0) solid; */
+}
+
+#settings-page #profile {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px var(--mosque) solid;
+    z-index: 999;
+    background-color: var(--mosque-darker);
+}
+
+#settings-page #profile #profile-details {
+    height: 50%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: 0px 0px 1px rgb(5, 4, 4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--mosque);
+    /* border: 1px var(--mosque) solid; */
+}
+
+#settings-page #profile #profile-details #quote {
+    /* height: 60%; */
+    font-size: 10px;
+    opacity: .5;
+    color: var(--blue);
+    word-break: break-all;
+}
+
+#settings-page #profile img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#settings-page #settings-tab-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 35px 0 0px 0px;
+    transform: translate(0%, 12%);
+}
+
+#settings-page #settings-tabs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#settings-page #settings-tabs .tab {
+    width: 90%;
+    height: 40px;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    justify-content: center;
+    gap: 10px;
+    /* border-left: 1px solid var(--mosque);
+    border-right: 1px solid var(--mosque); */
+}
+
+#settings-page #settings-tabs .tab div {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: center;
+    color: var(--blue);
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#settings-page #settings-tabs .tab div span {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    font-size: 12px;
+}
+
+.exit {
+    color: rgb(200, 7, 7) !important;
+}
+
+#settings-page #settings-tabs .tab div small {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: var(--light-green);
+    font-size: 8px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 
+#settings-page #settings-tabs .tab div span {
+ width: 90%;
+ height: 40px;
+ display: flex;
+ align-items: center;
+ color: var(--blue);
+ font-size: 13px;
+ font-weight: 500;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 0px 0px 99px var(--mosque); 
+ border: 1px solid var(--mosque);
+} */
+#settings-page #settings-tabs .tab .settings-tab-icon {
+    height: 20px;
+}
+
+#settings-page #settings-tabs .tab .tab-profile-input {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    background-color: initial;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 99px var(--mosque);
+    border: 0;
+}
+
+#settings-page #settings-tabs .tab {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    background-color: transparent;
+    font-size: 11px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0px 0px 99px var(--mosque);
+    border: 0;
+}
+
+#settings-page #settings-tabs .tab input::placeholder {
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--blue);
+    font-weight: 500;
+}
+
+#settings-page #settings-tabs .tab input:focus {
+    border: 0;
+    outline: none;
+    color: Red;
+}
+
+#trade-mark {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#trade-mark span {
+    color: var(--mosque);
+}

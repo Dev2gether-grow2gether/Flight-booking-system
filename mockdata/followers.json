@@ -1,0 +1,52 @@
+ [
+        {
+            "name": "John Smith",
+            "quote": "Dream big, work hard.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Jane Doe",
+            "quote": "Never give up hope.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Bob Johnson",
+            "quote": "Work smart, not hard.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Emily Davis",
+            "quote": "Life is short, enjoy it.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Michael Brown",
+            "quote": "Think positive, stay motivated.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Emily Thompson",
+            "quote": "Life is a journey, enjoy it.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Jacob Garcia",
+            "quote": "Happiness is a choice.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Nicholas Anderson",
+            "quote": "Life is beautiful, live it.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Sophia Lee",
+            "quote": "Life is a gift, appreciate it.",
+            "avatar_link": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Mia King",
+            "quote": "Be yourself, everyone else is taken.",
+            "avatar_link": "https://via.placeholder.com/150"
+        }
+    ]

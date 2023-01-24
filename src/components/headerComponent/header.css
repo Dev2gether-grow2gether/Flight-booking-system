@@ -1,0 +1,73 @@
+
+#header {
+ width: 100%;
+ height: 85px;
+ display: flex;
+ flex-direction: column;
+}
+
+#header #header-top {
+ height: 50px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+#header-nav {
+ width: 100%;
+ height: 45px;
+ display: flex;
+ border-radius: 60px;
+}
+
+#header-nav #tabs {
+ border-radius: 20px;
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ color: var(--navtabtextcolor);
+ text-shadow: 1px 1px 3px black;
+ gap: 30px;
+}
+
+#header-nav #tabs .tab {
+ width: calc(45% - 15px);
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ font-size: var(--navtabtextfont);
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ transition: 1s ease-in-out;
+}
+
+#header-nav #tabs .tab img {
+ width: 30px;
+ height: 30px;
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ transition: 1s ease-in-out;
+}
+
+#header-nav #tabs .tab.active {
+ transition: 1s 1ms ease-in-out;
+ border-bottom: 2px solid var(--border);
+}
+
+#header-nav #tabs .disable {
+ cursor: not-allowed;
+ border: 1px dashed rgb(200, 7, 7);
+}
+
+#app-header {
+ height: 120px;
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-items: center;
+ background-color: var(--mosque-dark);
+ gap: 5px;
+}
